@@ -1,0 +1,62 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+}
+
+html {
+    /* tuong ung vs the p font-size: 1.2rem=12px */
+    font-size: 62.5%;
+    line-height: 1.6rem; 
+    /* tuong ung 16px */
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    
+}
+
+.col-four {
+    flex-basis: 25%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.margin-l-r-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}

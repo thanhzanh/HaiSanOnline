@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='' />
+    <title>Haisan.Online</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <link rel="stylesheet" href="./assets/styles/submain.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    
+</head>
+<body>
+    <div id="app">
+        <!-- Begin Header -->
+        <div id="header">
+            <div class="header-with-search">
+
+                <div id="mobile-menu" class="header__contact_mobile-menu-btn">
+                    <i  class="header__contact_icon_menu fa-solid fa-bars"></i>
+                </div>
+
+                <div class="header__logo">
+                    <a class="header__slogan" href="">Haisan.Online</a>
+                </div>
+
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                    <button class="header__btn-search" type="submit">
+                        <i class="header__search-icon-search fa-solid fa-magnifying-glass"></i>  
+                    </button>
+                </div>
+    
+                <div class="header__contact">
+                    <ul class="header__contact-cart">                       
+                        <li class="header__contact-cart-item">
+                            <a href="tel:0399208919">
+                                <i class="header__contact-phone-icon fa-solid fa-phone-volume"></i>
+                            </a>
+                        </li>
+                        <li class="header__contact-cart-item">                           
+                            <span class="header__contact-cart-content">
+                                Gọi mua hàng <br>
+                                <a style="font-weight: 600; font-size: 20px; color: #fff;" href="tel:0399208919">0399208919</a>                                                       
+                            </span>                                                        
+                        </li>
+
+                        <li class="header__contact-cart-item" >                           
+                            <a href="#"><i class="header__contact-cart-icon fa-solid fa-cart-shopping"></i></a>
+                        </li>   
+
+                        <li class="header__contact-cart-item header__contact-cart-item--has-notify">
+                            <i class="header__contact-cart-icon fa-solid fa-user"></i>
+
+                            <div class="header__notify">
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="./dangnhap.html" class="header__notify-link">
+                                            <span class="header__notify-title">Đăng nhập</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="./dangky.html" class="header__notify-link">
+                                            <span class="header__notify-title">Đăng ký</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>             
+                    </ul>
+                </div>
+            </div> 
+            
+            <div id="navbar">
+                <ul class="nav">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="#">
+                            Danh mục sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./tom.html">Tôm biển</a></li>
+                            <li><a href="./ca.html">Cá biển</a></li>
+                            <li><a href="./cuaghe.html">Cua biển - Ghẹ biển</a></li>
+                            <li><a href="./mucbachtuoc.html">Mực - Bạch tuộc</a></li>
+                            <li><a href="./oc.html">Ốc Biển</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./tindoanhnghiep.html">Tin doanh nghiệp</a></li>
+                    <li><a href="./lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            
+        </div> 
+        <!-- End Header -->
+
+        <!-- Begin Slider -->
+        <div id="slider">
+            <div class="slider-container">
+                <img id="show-img" class="slider-img fade" title="Haisan.Online" src="./assets/image/slide-3.jpg" alt="slide" onclick="changImg()">
+            </div>
+
+            <div class="slider-container">
+                <img id="show-img" class="slider-img fade" title="Haisan.Online" src="./assets/image/slide-4.jpg" alt="slide" onclick="changImg()">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+
+            
+        </div>
+
+        <div class="contact_fixed">
+            <a href="tel: 0399208919">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+        <!-- End Slider -->
+    
+        <div id="content">
+
+            <!-- Begin Content Products -->
+            <div class="content_products margin-l-r-10">
+              
+                <div class="content_products-haisan">
+                    <!-- Begin Products Tom Bien-->
+                    <div id="tom-bien" class="content_products-list-hot">
+
+                        <div class="content_products-item-title-header-white">
+                            <span>Sản phẩm bán chạy</span>
+                        </div>
+
+                        <div class="content_products-item">
+
+                            <div class="col-four content_products-item-product">
+                                <a href="./cachimtrangbien.html">
+                                    <img title="Cá Chim Trắng Biển" src="./assets/image/ca-chim-trang-bien-3-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <h3 class="content_products-item-product-title-white">Cá Chim Trắng Biển</h3>
+                                <p class="content_products-item-product-info">270,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-four content_products-item-product">
+                                <a href="./cuahoangde.html">
+                                    <img title="Cua Hoàng Đế" src="./assets/image/cua-hoang-de-1-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <h3 class="content_products-item-product-title-white">Cua Hoàng Đế</h3>
+                                <p class="content_products-item-product-info">2,190,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-four content_products-item-product">
+                                <a href="./tomhum.html">
+                                    <img title="Tôm Hùm" src="./assets/image/tom-hum-2-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <h3 class="content_products-item-product-title-white">Tôm Hùm</h3>
+                                <p class="content_products-item-product-info">2,040,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-four content_products-item-product">
+                                <a href="./tomsubien.html">
+                                    <img title="Tôm Sú Biển" src="./assets/image/tom-su-bien-6-min-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <h3 class="content_products-item-product-title-white">Tôm Sú Biển</h3>
+                                <p class="content_products-item-product-info">650,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                                                   
+                        </div>
+                    </div>
+                    <!-- End Products Tom Bien-->
+
+                    <!-- Begin Products Ca Bien-->
+                    <div id="ca-bien" class="content_products-list-hot">
+
+                        <div class="content_products-item-title-header-white">
+                            <span>Đang khuyến mãi</span>
+                        </div>
+
+                        <div class="content_products-item">
+                            <div class="col-four content_products-item-product">
+                                <a href="./cuahoangde.html">
+                                    <img title="Cua Hoàng Đế" src="./assets/image/cua-hoang-de-1-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <span class="discount">-10%</span>
+                                <h3 class="content_products-item-product-title-white">Cua Hoàng Đế                                       
+                                </h3>
+                                
+                                <p class="content_products-item-product-info">1,971,000 VNĐ / 1kg</p>
+                                <p class="content_products-item-product-info-discount">2,190,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-four content_products-item-product">
+                                <a href="./muclacau.html">
+                                    <img title="Bạch Tuộc" src="./assets/image/z4278709429919_7f3ae871df4275c3d72b92d75b137830__1__2fbc58f958324669bba7f2a36000649b_1024x1024.webp" alt="">
+                                    
+                                </a>
+                                <span class="discount">-10%</span>
+                                <h3 class="content_products-item-product-title-white">Mực Lá Câu
+                                </h3>
+                                <p class="content_products-item-product-info">270,000 VNĐ / 1kg</p>
+                                <p class="content_products-item-product-info-discount">300,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="col-four content_products-item-product">
+                                <a href="./caho.html">
+                                    <img title="Cá Hố" src="./assets/image/ca-ho-1-175x175.jpg" alt="">
+                                    
+                                </a>
+                                <span class="discount">-10%</span>
+                                <h3 class="content_products-item-product-title-white">Cá Hố
+                                </h3>
+                                <p class="content_products-item-product-info">189,000 VNĐ / 1kg</p>
+                                <p class="content_products-item-product-info-discount">210,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div> 
+                            
+                            <div class="col-four content_products-item-product">
+                                <a href="./cuahoangdexanh.html">
+                                    <img title="Cua Hoàng Đế Xanh" src="./assets/image/king-crab-xanh_e3ccc7a203e54ea0b2cb8a0c2c57c7fa_1024x1024.jpg" alt="">
+                                    
+                                </a>
+                                <span class="discount">-10%</span>
+                                <h3 class="content_products-item-product-title-white">Cua Hoàng Đế Xanh
+                                </h3>
+                                <p class="content_products-item-product-info">2,511,000 VNĐ / 1kg</p>
+                                <p class="content_products-item-product-info-discount">2,790,000 VNĐ / 1kg</p>
+                                <button class="content_products-item-add-product" type="submit">
+                                    <span class="content_products-item-add-product-title">Thêm vào giỏ</span>
+                                    <i class="content_products-add-icon fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!-- End Products Ca Bien-->
+                   
+                </div>
+
+            </div>
+            <!-- End Content Products -->
+
+            <!-- Begin Content Policy -->
+            <div class="row content_policy">               
+                <div class="content_info-title-main margin-l-r-10">
+                    <h2>03 lí do nên chọn haisan.online</h2>
+                </div>          
+
+                <div class="content_policy-item">
+                    <div class="content_policy-item-icon">
+                        <i class="content_policy-icon-quanlity fa-solid fa-motorcycle"></i>
+                    </div>
+                    <div class="content_polic-item-title">
+                        <h3>Miễn phí giao hàng</h3>
+                        <p>Miễn phí vận chuyển tất cả đơn đặt <br> hàng > 1 triệu đồng.</p>
+                    </div>
+                </div>
+                <div class="content_policy-item">
+                    <div class="content_policy-item-icon">
+                        <i class="content_policy-icon-quanlity fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="content_polic-item-title">
+                        <h3>Tư vấn miễn phí 24/7</h3>
+                        <p>Đội ngũ tư vấn, CSKH nhiệt tình <br> có hiểu biết sâu về sản phẩm.</p>
+                    </div>
+                </div>
+                <div class="content_policy-item">
+                    <div class="content_policy-item-icon">
+                        <i class="content_policy-icon-quanlity fa-solid fa-fish-fins"></i>
+                    </div>
+                    <div class="content_polic-item-title">
+                        <h3>Hải sản tươi sống</h3>
+                        <p>Cam kết hàng tươi sống khi đến <br> tay khách hàng.</p>
+                    </div>
+                </div>
+                <div class="content_policy-item">
+                    <div class="content_policy-item-icon">
+                        <i class="content_policy-icon-quanlity fa-solid fa-medal"></i>
+                    </div>
+                    <div class="content_polic-item-title">
+                        <h3>Đổi trả hàng hóa</h3>
+                        <p>Đổi trả hàng hóa nếu như sản <br> phẩm không đúng như mô tả.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content Policy -->
+        
+        </div>
+        
+        <!-- Begin Footer -->
+        <div id="footer">
+            <div class="footer_container">
+                <div class="footer_row">
+                    <div class="footer_col-one">
+                        <a class="footer_title-main" href="https://haisan.online/">Haisan.Online</a>
+                        <div class="footer_address">
+                            <i class="footer--icon fa-solid fa-location-dot"></i>
+                            <span>171/3/5b, Quốc Lộ 1a, Khu phố 3, Phương Bình Chiểu, TP. Thủ Đức</span>
+                        </div>
+                        <div class="footer_hotline">
+                            <i class="footer--icon fa-solid fa-phone"></i>
+                            <a  href="tel:0399208919">0399208919</a>
+                        </div>
+                        <div class="footer_email">
+                            <i class="footer--icon fa-solid fa-envelope"></i>
+                            <a href="haisan.online2022@gmail.com">haisan.online2022@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_col-two">
+                        <h4 class="footer_sub-text-main">Hỗ trợ khách hàng</h4>
+                        <ul class="footer_support">
+                            <li><a href="">Phương thức thanh toán</a></li>
+                            <li><a href="">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col-three">
+                        <h4 class="footer_sub-text-main">Chính sách & điều khoản</h4>
+                        <ul class="footer_policy">
+                            <li><a href="">Chính sách vận chuyển</a></li>
+                            <li><a href="">Chính sách bảo mật</a></li>
+                            <li><a href="">Chính sách kiểm hàng, đổi trả hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col-four">
+                        <h4 class="footer_sub-text-main">Kết nối với chúng tôi</h4>
+                        <div class="footer_connect">
+                            <div class="footer_connect-icon">
+                                <i class="footer--icon-icon fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="footer_connect-icon">
+                                <i class="footer--icon-icon fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="footer_connect-icon">
+                                <i class="footer--icon-icon fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer_copyright">
+                <p>&copy; Bản quyền thuộc về Công ty TNHH Thành Danh.</p>
+            </div>
+
+            
+
+        </div>
+        <!-- End Footer -->
+
+
+        <script src="./assets/scripts/script.js">
+               
+        </script>
+    </div>
+</body>
+</html>
