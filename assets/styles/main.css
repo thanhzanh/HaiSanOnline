@@ -675,6 +675,16 @@
     
 }
 
+.discount-2 {
+    background-color: red;
+    color: #fff !important;
+    margin-left: 20px;
+    padding: 5px 10px !important;
+    font-size: 12px;
+    border-bottom-left-radius: 65px;
+    border-top-right-radius: 65px;
+}
+
 .content_products-item-product-info-discount {
     font-weight: 700;
     font-size: 14px;
@@ -688,7 +698,7 @@
 .content_register {
     width: 600px;
     max-width: 100%;
-    margin: 200px auto 100px auto;
+    margin: 70px auto 80px auto;
     text-align: center;
     background-color: #fff;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
@@ -790,7 +800,7 @@
 .content_login {
     width: 600px;
     max-width: 100%;
-    margin: 200px auto;
+    margin: 70px auto 80px auto;
     text-align: center;
     padding-bottom: 20px;
     background-color: #fff;
@@ -1061,6 +1071,7 @@
 .footer_policy li a {
     color: #fff;
     text-decoration: none;
+
 }
 
 .footer_support li:hover a,

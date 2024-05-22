@@ -127,7 +127,8 @@
     background-color: #fff;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
     max-height: 500px;
-    /* margin-top: 50px; */
+    position: sticky;
+    top: 136px;
 }
 
 .content_info-product-detail-left-title-main {
