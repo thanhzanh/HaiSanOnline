@@ -22,6 +22,7 @@
     display: inline;
     line-height: 40px;
     padding: 0 5px 0 0;
+    font-size: 13px;
 }
 
 .content-nav-main-title li a {
@@ -32,11 +33,12 @@
 
 .content_main-product-galary {
     padding-right: 30px;
+    padding-left: 15px;
 }
 
 .content_main-product-galary-img {
     max-width: 100%;
-    width: 350px;
+    width: 338px;
     height: auto;
 }
 
@@ -58,11 +60,25 @@
 
 .product__detail--quantity {
     padding: 10px 0;
+    display: flex;
 }
 
 .product__detail--quantity span{
     font-size: 16px;
     font-weight: 600;
+}
+
+.product_evaluate {
+    padding-left: 10px;
+}
+
+.product_evaluate i {
+    font-size: 16px;
+    color: rgb(224, 224, 56);
+}
+
+.product_evaluate i:hover {
+    color: yellow;
 }
 
 .quantity_number-swap {

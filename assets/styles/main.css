@@ -125,7 +125,7 @@
     font-size: 22px;
     margin-right: 5px;
     color: var(--white-color);
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .header__contact-cart .header__contact-cart-icon {
@@ -350,6 +350,7 @@
         opacity: 1;
     }
 }
+
 
 
 /* Content */
@@ -628,11 +629,12 @@
 .content_products-item-product img {
     width: 230px;
     border-radius: 3px;
+    transition: transform 0.5s ease;
 }
 
 .content_products-item-product img:hover {
     cursor: pointer;
-    opacity: 0.7;
+    transform: scale(1.05);
 }
 
 .content_products-item-add-product {
@@ -688,8 +690,8 @@
     max-width: 100%;
     margin: 200px auto 100px auto;
     text-align: center;
-    background-color: aliceblue;
-    box-shadow: 1px 1px 4px 4px #0688cc;
+    background-color: #fff;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
     border-radius: 50px;
 }
 
@@ -791,7 +793,8 @@
     margin: 200px auto;
     text-align: center;
     padding-bottom: 20px;
-    box-shadow: 1px 1px 4px 4px #0688cc;
+    background-color: #fff;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .1));
     border-radius: 50px;
 }
 
@@ -801,7 +804,7 @@
 
 .content_form-input-icon {
     position: absolute;
-    top: 50%;
+    top: 42%;
     right: 0;
     padding-right: 80px;
     transform: translateY(-50%);
@@ -942,6 +945,13 @@
     margin-bottom: 0;
 }
 
+.content_contact-info-text-detail-register {
+    text-align: left;
+    padding-left: 50px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
 .content_contact-info-text-detail span {
     padding-right: 10px;
 }
@@ -951,15 +961,31 @@
     color: var(--black-color);
 }
 
-.content_contact-info-text-detail-link:hover {
-    color: #ed1c24;
-    cursor: pointer;
-}
 
 .note-star {
     color: red;
     font-weight: bold;
 }
+
+.error-message {
+    text-align: left;
+    padding-left: 152px;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    color: red;
+}
+
+.error-message-re,
+.error-message-login {
+    text-align: left;
+    padding-left: 53px;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    color: red;
+}
+
 /* Footer */
 
 #footer {
@@ -1085,6 +1111,16 @@
     text-decoration:underline;
 }
 
+.footer_col-two li:hover {
+    color: #ed1c24;
+    text-decoration:underline;
+}
+
+.footer_col-three li:hover {
+    color: #ed1c24;
+    text-decoration:underline;
+}
+
 .footer_connect {
     display: flex;
 }
@@ -1102,9 +1138,9 @@
 }
 
 .footer--icon-icon {
-    /* color: #222; */
     font-size: 14px;
     padding: 8px;
+    color: var(--white-color);
 }
 
 /* Phone fixed */
@@ -1128,25 +1164,10 @@
 }
 
 .contact_fixed a i {
-    animation: rotateClockwise 0.3s infinite;
+    animation: topDown 0.3s infinite;
 }
 
-/* @keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-10px);
-    }
-    50% {
-        transform: translateX(5px);
-    }
-    75% {
-        transform: translateX(-5px);
-    }
-} */
-
-@keyframes rotateClockwise {
+@keyframes topDown {
     0% {
         transform: rotate(0deg);
     }

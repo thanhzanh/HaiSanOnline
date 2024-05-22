@@ -45,10 +45,7 @@
                                 Gọi mua hàng <br>
                                 <a style="font-weight: 600; font-size: 20px; color: #fff;" href="tel:0399208919">0399208919</a>                                                       
                             </span>                                                        
-                        </li>
-                        <li class="header__contact-cart-item" >                           
-                            <a href="#"><i class="header__contact-cart-icon fa-solid fa-cart-shopping"></i></a>
-                        </li>         
+                        </li>       
                         
                         <li class="header__contact-cart-item header__contact-cart-item--has-notify">
                             <i class="header__contact-cart-icon fa-solid fa-user"></i>
@@ -91,6 +88,7 @@
                         </ul>
                     </li>
                     <li><a href="./tindoanhnghiep.html">Tin doanh nghiệp</a></li>
+                    <li><a href="#">Lab bài tập</a></li>
                     <li><a href="./lienhe.html">Liên hệ</a></li>
                 </ul>
             </div>
@@ -112,21 +110,31 @@
                 </div>
 
                 <div class="content_register-user">
-                    <form class="content_form" action="" method="get">
+                    <form id="form-register" class="content_form" action="" method="get">
                         <div class="content_form_register">
-                            <input class="content_form-input" required type="text" name="hoten" placeholder="Họ tên" id="">
+                            <p class="content_contact-info-text-detail-register">Họ tên<span class="note-star">*</span></p>
+                            <input class="content_form-input" required type="text" name="hoten" placeholder="Hải sản online" id="fullNameInput">
+                            <div class="error-message-re" id="fullNameErrorMessage"></div>
                         </div>  
                         <div class="content_form_register">
-                            <input class="content_form-input" required type="number" name="sdt" placeholder="Số điện thoại" id="">
+                            <p class="content_contact-info-text-detail-register">Số điện thoại<span class="note-star">*</span></p>
+                            <input class="content_form-input" required type="tel" name="sdt" placeholder="0399200000" id="phoneInput">
+                            <div class="error-message-re" id="phoneErrorMessage"></div>
                         </div>                            
                         <div class="content_form_register">
-                            <input class="content_form-input" required type="email" name="email" placeholder="Email" id="">
+                            <p class="content_contact-info-text-detail-register">Email<span class="note-star">*</span></p>
+                            <input class="content_form-input" required type="email" name="email" placeholder="haisanonline2202@gmai.com" id="emailInput">
+                            <div class="error-message-re" id="emailErrorMessage"></div>
                         </div>
                         <div class="content_form_register">
-                            <input class="content_form-input" required type="password" name="password" placeholder="Password" id="">
+                            <p class="content_contact-info-text-detail-register">Password<span class="note-star">*</span></p>
+                            <input class="content_form-input" required type="password" name="password" placeholder="Password" id="passwordInput">
+                            <div class="error-message-re" id="passwordErrorMessage"></div>
                         </div>   
                         <div class="content_form_register">
-                            <input class="content_form-input" required type="password" name="password" placeholder="Nhập lại password" id="">
+                            <p class="content_contact-info-text-detail-register">Nhập lại password<span class="note-star">*</span></p>
+                            <input class="content_form-input" required type="password" name="password" placeholder="Nhập lại password" id="confirmInput">
+                            <div class="error-message-re" id="confirmPasswordErrorMessage"></div>
                         </div>                                  
                     </form>
                 </div>
@@ -134,29 +142,29 @@
                 <div class="content_register-aside">
                     <p class="content_register-aside-policy-text">
                         Bằng việc đăng ký, bạn đã đồng ý với Haisan.online về <br>
-                        <a href="" class="content_register-aside-policy-link">Điều khoản dịch vụ</a> &
-                        <a href="" class="content_register-aside-policy-link">Chính sách bảo mật</a>
+                        <a href="#" class="content_register-aside-policy-link">Điều khoản dịch vụ</a> &
+                        <a href="#" class="content_register-aside-policy-link">Chính sách bảo mật</a>
                     </p>
                 </div>
                 
                 <div class="content_register-submit-btn">
-                    <button class="btn--primary">Đăng ký</button>
+                    <button type="button" onclick="validateForm()" class="btn--primary">Đăng ký</button>
                 </div>
 
                 <div class="content_register_socials">
-                    <a href="" class="btn--with--icon">
+                    <span class="btn--with--icon">
                         <i class="content_register_socials-icon fa-brands fa-facebook"></i>
                         <span class="content_register_socials-title-icon">
                             Kết nối với Facebook
                         </span>                      
-                    </a>
+                    </span>
 
-                    <a href="" class="btn--with--icon">
+                    <span class="btn--with--icon">
                         <i class="content_register_socials-icon fa-brands fa-google"></i>
                         <span class="content_register_socials-title-icon">
                             Kết nối với Google
                         </span>                      
-                    </a>
+                    </span>
                 </div>
 
             </div>
@@ -180,39 +188,38 @@
                     </div>
                     <div class="footer_email">
                         <i class="footer--icon fa-solid fa-envelope"></i>
-                        <a href="haisan.online2022@gmail.com">haisan.online2022@gmail.com</a>
+                        <a href="danhthanhvo23072003@gmail.com">danhthanhvo23072003@gmail.com</a>
                     </div>
                 </div>
 
                 <div class="footer_col-two">
-                    <h4 class="footer_sub-text-main">Hỗ trợ khách hàng</h4>
+                    <h4 class="footer_sub-text-main">Sinh viên thực hiện</h4>
                     <ul class="footer_support">
-                        <li><a href="">Phương thức thanh toán</a></li>
-                        <li><a href="">Hướng dẫn đặt hàng</a></li>
-                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li>Võ Thành Danh</li>
+                        <li>D21_TH08</li>
+                        <li>DH52110671</li>
+                        <li>NM Web & UD: T3C2</li>
                     </ul>
                 </div>
 
                 <div class="footer_col-three">
-                    <h4 class="footer_sub-text-main">Chính sách & điều khoản</h4>
+                    <h4 class="footer_sub-text-main">Giảng viên</h4>
                     <ul class="footer_policy">
-                        <li><a href="">Chính sách vận chuyển</a></li>
-                        <li><a href="">Chính sách bảo mật</a></li>
-                        <li><a href="">Chính sách kiểm hàng, đổi trả hàng</a></li>
+                        <li>Nguyễn Trọng Nghĩa</li>
                     </ul>
                 </div>
 
                 <div class="footer_col-four">
-                    <h4 class="footer_sub-text-main">Kết nối với chúng tôi</h4>
+                    <h4 class="footer_sub-text-main">Thông tin liên hệ</h4>
                     <div class="footer_connect">
                         <div class="footer_connect-icon">
-                            <i class="footer--icon-icon fa-brands fa-facebook"></i>
+                            <a href="https://www.facebook.com/thanhzanh.03"><i class="footer--icon-icon fa-brands fa-facebook"></i></a>
                         </div>
                         <div class="footer_connect-icon">
-                            <i class="footer--icon-icon fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/_dtv.jenoo/"><i class="footer--icon-icon fa-brands fa-instagram"></i></a>
                         </div>
                         <div class="footer_connect-icon">
-                            <i class="footer--icon-icon fa-brands fa-twitter"></i>
+                            <a href="mailto:dh52110671@student.stu.edu.vn"><i class="footer--icon-icon fa-solid fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
@@ -224,13 +231,15 @@
             <p>&copy; Bản quyền thuộc về Công ty TNHH Thành Danh.</p>
         </div>
 
+        
+
     </div>
     <!-- End Footer -->
 
 
-        <script src="./assets/scripts/script.js">
-               
-        </script>
+    <script src="./assets/scripts/register.js">
+            
+    </script>
     </div>
 </body>
 </html>
