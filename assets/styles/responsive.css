@@ -120,6 +120,10 @@
     padding-left: 138px;
 }
 
+.contact_fixed {
+    padding: 16px;
+}
+
 }
 
 
@@ -497,6 +501,11 @@
 
     .contact_fixed {
         right: 2%;
+    }
+
+    .contact_fixed_zalo img {
+        width: 55px;
+        height: 55px;
     }
 
 

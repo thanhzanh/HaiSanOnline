@@ -4,8 +4,6 @@ var navbar = document.getElementById('navbar');
 var mobileMenu = document.getElementById('mobile-menu');
 var navbarHeight = navbar.clientHeight;
 
-const $ = document.querySelector.bind(document);
-
 
 // Dong/Mo mobile menu
 mobileMenu.onclick = function() {
@@ -14,14 +12,19 @@ mobileMenu.onclick = function() {
         navbar.style.height = 'auto';
     } else {
         navbar.style.height = '0';
-    }
+    }   
 }
 
-// TODO SUBNAV
-// const btn_sticky = $("btn-sticky");
-// btn_sticky.addEventListener("click", () => {
-//     $()
-// });
+// Toggle subnav for Danh mục sản phẩm
+// mobileMenuSubnav.onclick = function() {
+//     var isClosedSubnav = subnav.clientHeight === subnavHeight;
+//     if(isClosedSubnav) {
+//         subnav.style.height = 'auto';
+//     } else {
+//         subnav.style.height = '0';
+//     }
+// }
+
 
 // Tu dong dong khi chon menu
 var menuItems = document.querySelectorAll('.nav li a[href*="#"]');
