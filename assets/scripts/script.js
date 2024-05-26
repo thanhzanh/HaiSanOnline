@@ -4,6 +4,8 @@ var navbar = document.getElementById('navbar');
 var mobileMenu = document.getElementById('mobile-menu');
 var navbarHeight = navbar.clientHeight;
 
+const $ = document.querySelector.bind(document);
+
 
 // Dong/Mo mobile menu
 mobileMenu.onclick = function() {
@@ -14,6 +16,12 @@ mobileMenu.onclick = function() {
         navbar.style.height = '0';
     }
 }
+
+// TODO SUBNAV
+// const btn_sticky = $("btn-sticky");
+// btn_sticky.addEventListener("click", () => {
+//     $()
+// });
 
 // Tu dong dong khi chon menu
 var menuItems = document.querySelectorAll('.nav li a[href*="#"]');

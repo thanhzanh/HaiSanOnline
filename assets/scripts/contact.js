@@ -5,6 +5,7 @@
 const fullNameInput = document.getElementById('fullNameInput');
 const phoneInput = document.getElementById('phoneInput');
 const emailInput = document.getElementById('emailInput');
+const messageInput = document.getElementById('messageInput');
 
 
 const setError = (element ,message) =>
@@ -48,6 +49,17 @@ function contactForm() {
     const fullNameInputValue = fullNameInput.value.trim();
     const emailInputValue = emailInput.value.trim();
     const phoneInputValue = phoneInput.value.trim();
+    const messageInputValue = messageInput.value.trim();
+
+    const serviceID = "service_s8iew2b";
+    const templateID = "template_7ofd298";
+
+    var templateParams = {
+        fullNameInput: fullNameInputValue,
+        phoneInput: phoneInputValue,
+        emailInput: emailInputValue,
+        messageInput: messageInputValue
+    };  
 
     let isvalue = true;
 
@@ -85,8 +97,13 @@ function contactForm() {
         setSuccess(emailInput);
     }
 
-    if(isvalue)
+    if(isvalue)     
     {
-        alert('Cảm ơn bạn đã gửi ý kiến. Haisan.Online sẽ phản hồi cho bạn sớm nhất.');
+        emailjs.send(serviceID, templateID, templateParams)
+        .then(function(response) {
+            alert('Cảm ơn bạn đã gửi ý kiến. Haisan.Online sẽ phản hồi cho bạn sớm nhất.');
+        }, function(error) {
+            alert('Có lỗi xảy ra. Vui lòng thử lại!');
+        });
     }
 }

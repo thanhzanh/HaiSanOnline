@@ -95,7 +95,6 @@
                     <li><a href="./gioithieu.html">Giới thiệu</a></li>
                     
                     <li><a href="./tindoanhnghiep.html">Tin doanh nghiệp</a></li>
-                    <li><a href="#">Lab bài tập</a></li>
                     <li><a href="./lienhe.html">Liên hệ</a></li>
                 </ul>
             </div>
@@ -124,7 +123,7 @@
                         <p class="content_contact-info-text-detail">
                             <span>Email:</span>
                             <span class="content_contact-info-text-detail-link">
-                                dh52110671@student.stu.edu.vn
+                                danhthanhvo23072003@gmail.com
                             </span>
                         </p>
                         <p class="content_contact-info-text-detail">
@@ -157,7 +156,7 @@
 
                             <div class="content_form_contact">
                                 <p class="content_contact-info-text-detail">Nội dung<span class="note-star">*</span></p>
-                                <textarea class="content_form-input"  name="" id="" cols="65" rows="5" placeholder="Nhập nội dung cần liên hệ..."></textarea>
+                                <textarea class="content_form-input"  name="message" id="messageInput" cols="65" rows="5" placeholder="Nhập nội dung cần liên hệ..."></textarea>
                             </div>
                     </div>
     
@@ -244,6 +243,17 @@
 
         <script src="./assets/scripts/script.js"></script>
         <script src="./assets/scripts/contact.js"></script>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "jSzDnUuVV_PY5Fm_s",
+                });
+            })();
+        </script>
 
     </div>
 </body>
