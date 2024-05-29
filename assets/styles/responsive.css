@@ -390,7 +390,7 @@
     }
 
     .content_products-item-title-header {
-        justify-content: center;
+        justify-content: space-between;
     }
     
 
